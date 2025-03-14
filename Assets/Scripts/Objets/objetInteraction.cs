@@ -2,17 +2,26 @@ using System.Reflection;
 using UnityEngine;
 using System;
 
-public class objetInteraction : MonoBehaviour
+public class carteaccesInteraction : MonoBehaviour
 {
     private bool proximiteJoueur;
     private bool doSomething;
+
 
     private bool canGoOffline = false;
     private bool outlineIsOn = false;
 
     public GameObject gameManager;
         private gererAccesZones gererAccesZones;
+
+    public bool estAssocierAUneZone;
     public string zoneAssocier;
+
+    // Quetes
+    public GameObject questManager;
+    public bool estAssocierAUneQuete;
+    public int delaisTriggerQueteEnSecondes;
+    [SerializeField] private string queteAssociee;
 
     private PropertyInfo propertyInfo;
     private FieldInfo fieldInfo;
@@ -34,21 +43,26 @@ public class objetInteraction : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        // Update la quete associer si associer à une quete (sinon il y aura erreur car undefined/null)
+        if (estAssocierAUneQuete)
+        {
+            queteAssociee = this.GetComponent<queteAssocier>().queteAssocieeNom;
+        }
 
 
-
-
+       
         if (gameObject.GetComponent<objetProximity>().actif)
         {
-            this.GetComponent<MeshRenderer>().material.color = Color.green;
+            // Effet visuel de la proximite du joueur
+                this.GetComponent<MeshRenderer>().material.color = Color.green;
+                if (!outlineIsOn)
+                {
+                    this.GetComponent<Outline>().enabled = true;
 
-            if (!outlineIsOn)
-            {
-                this.GetComponent<Outline>().enabled = true;
 
-
-                outlineIsOn = true;
-            }
+                    outlineIsOn = true;
+                }
+            //
 
 
             // Interaction avec objet faite
@@ -58,6 +72,9 @@ public class objetInteraction : MonoBehaviour
 
                 // L'OBJET FAIT QUELQUE CHOSE
                     
+                // ASSOCIER A UNE ZONE!
+                if (estAssocierAUneZone)
+                {
                     if (propertyInfo != null)
                     {
                         propertyInfo.SetValue(gererAccesZones, true);
@@ -73,16 +90,34 @@ public class objetInteraction : MonoBehaviour
                     {
                         Debug.Log("Erreur : " + zoneAssocier + " n'existe pas");
                     }
+                }
+
+                // ASSOCIER A UNE QUETE
+                if (estAssocierAUneQuete)
+                {
+                    
+                    if (questManager.GetComponent<questsManager>().listeQuetes[0] == queteAssociee)
+                    {
+                        questManager.GetComponent<questsManager>().queteTrigger(delaisTriggerQueteEnSecondes);
+                    }
+                    else
+                    {
+                        Debug.Log("Le joueur a skip une quete..?");
+                        Debug.Log("ZONE: Quete associee = " + queteAssociee);
+                        Debug.Log("ZONE: Quete [0] (actuelle) du manager = " + questManager.GetComponent<questsManager>().listeQuetes[0]);
+                    }
 
 
-                    // Apres avoir pick up la carte, la détruire
-                    Destroy(this.gameObject);
 
+                }
+                // Apres avoir pick up la carte, la détruire
+                Destroy(this.gameObject);
                 // 
 
 
                 gameObject.GetComponent<objetProximity>().doSomething = false;
             }
+            //
 
 
 

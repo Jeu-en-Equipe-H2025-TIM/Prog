@@ -25,6 +25,8 @@ public class gererAccesZones : MonoBehaviour
     public bool accesZone2 = false;
 
     public bool puzzle1Fin = false;
+
+    public bool accesEtQuete = false;
     //
 
     // Permissions
