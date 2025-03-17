@@ -15,6 +15,7 @@ public class playerGererQuetes : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        questsManager = GameObject.Find("questsManager");
         queteActuelle = questsManager.GetComponent<questsManager>().listeQuetes[0];
     }
 

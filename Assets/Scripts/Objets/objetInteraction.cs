@@ -18,7 +18,7 @@ public class carteaccesInteraction : MonoBehaviour
     public string zoneAssocier;
 
     // Quetes
-    public GameObject questManager;
+    public GameObject questsManager;
     public bool estAssocierAUneQuete;
     public int delaisTriggerQueteEnSecondes;
     [SerializeField] private string queteAssociee;
@@ -30,6 +30,9 @@ public class carteaccesInteraction : MonoBehaviour
 
     private void Start()
     {
+        questsManager = GameObject.Find("questsManager");
+        gameManager = GameObject.Find("gameManager");
+
         gererAccesZones = gameManager.GetComponent<gererAccesZones>();
 
         type = gererAccesZones.GetType();
@@ -96,15 +99,15 @@ public class carteaccesInteraction : MonoBehaviour
                 if (estAssocierAUneQuete)
                 {
                     
-                    if (questManager.GetComponent<questsManager>().listeQuetes[0] == queteAssociee)
+                    if (questsManager.GetComponent<questsManager>().listeQuetes[0] == queteAssociee)
                     {
-                        questManager.GetComponent<questsManager>().queteTrigger(delaisTriggerQueteEnSecondes);
+                        questsManager.GetComponent<questsManager>().queteTrigger(delaisTriggerQueteEnSecondes);
                     }
                     else
                     {
                         Debug.Log("Le joueur a skip une quete..?");
                         Debug.Log("ZONE: Quete associee = " + queteAssociee);
-                        Debug.Log("ZONE: Quete [0] (actuelle) du manager = " + questManager.GetComponent<questsManager>().listeQuetes[0]);
+                        Debug.Log("ZONE: Quete [0] (actuelle) du manager = " + questsManager.GetComponent<questsManager>().listeQuetes[0]);
                     }
 
 

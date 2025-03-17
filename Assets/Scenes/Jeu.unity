@@ -118,156 +118,6 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
---- !u!1 &10576695
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 10576696}
-  - component: {fileID: 10576699}
-  - component: {fileID: 10576698}
-  - component: {fileID: 10576697}
-  m_Layer: 5
-  m_Name: Quete Affichage
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!224 &10576696
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 10576695}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1776325799}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5, y: 0.5}
-  m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -353, y: 451}
-  m_SizeDelta: {x: 200, y: 50}
-  m_Pivot: {x: 0.5, y: 0.5}
---- !u!114 &10576697
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 10576695}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 8143624cc08c96d488fb9c6bb0c25fd4, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  questManager: {fileID: 1793331585}
---- !u!114 &10576698
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 10576695}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f4688fdb7df04437aeb418b961361dc5, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_Material: {fileID: 0}
-  m_Color: {r: 1, g: 1, b: 1, a: 1}
-  m_RaycastTarget: 1
-  m_RaycastPadding: {x: 0, y: 0, z: 0, w: 0}
-  m_Maskable: 1
-  m_OnCullStateChanged:
-    m_PersistentCalls:
-      m_Calls: []
-  m_text: QUETE EMPTY
-  m_isRightToLeft: 0
-  m_fontAsset: {fileID: 11400000, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_sharedMaterial: {fileID: 2180264, guid: 8f586378b4e144a9851e7b34d9b748ee, type: 2}
-  m_fontSharedMaterials: []
-  m_fontMaterial: {fileID: 0}
-  m_fontMaterials: []
-  m_fontColor32:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontColor: {r: 1, g: 1, b: 1, a: 1}
-  m_enableVertexGradient: 0
-  m_colorMode: 3
-  m_fontColorGradient:
-    topLeft: {r: 1, g: 1, b: 1, a: 1}
-    topRight: {r: 1, g: 1, b: 1, a: 1}
-    bottomLeft: {r: 1, g: 1, b: 1, a: 1}
-    bottomRight: {r: 1, g: 1, b: 1, a: 1}
-  m_fontColorGradientPreset: {fileID: 0}
-  m_spriteAsset: {fileID: 0}
-  m_tintAllSprites: 0
-  m_StyleSheet: {fileID: 0}
-  m_TextStyleHashCode: -1183493901
-  m_overrideHtmlColors: 0
-  m_faceColor:
-    serializedVersion: 2
-    rgba: 4294967295
-  m_fontSize: 36
-  m_fontSizeBase: 36
-  m_fontWeight: 400
-  m_enableAutoSizing: 0
-  m_fontSizeMin: 18
-  m_fontSizeMax: 72
-  m_fontStyle: 0
-  m_HorizontalAlignment: 1
-  m_VerticalAlignment: 256
-  m_textAlignment: 65535
-  m_characterSpacing: 0
-  m_wordSpacing: 0
-  m_lineSpacing: 0
-  m_lineSpacingMax: 0
-  m_paragraphSpacing: 0
-  m_charWidthMaxAdj: 0
-  m_TextWrappingMode: 1
-  m_wordWrappingRatios: 0.4
-  m_overflowMode: 0
-  m_linkedTextComponent: {fileID: 0}
-  parentLinkedComponent: {fileID: 0}
-  m_enableKerning: 0
-  m_ActiveFontFeatures: 6e72656b
-  m_enableExtraPadding: 0
-  checkPaddingRequired: 0
-  m_isRichText: 1
-  m_EmojiFallbackSupport: 1
-  m_parseCtrlCharacters: 1
-  m_isOrthographic: 1
-  m_isCullingEnabled: 0
-  m_horizontalMapping: 0
-  m_verticalMapping: 0
-  m_uvLineOffset: 0
-  m_geometrySortingOrder: 0
-  m_IsTextObjectScaleStatic: 0
-  m_VertexBufferAutoSizeReduction: 0
-  m_useMaxVisibleDescender: 1
-  m_pageToDisplay: 1
-  m_margin: {x: -407.91663, y: 0, z: 0, w: 0}
-  m_isUsingLegacyAnimationComponent: 0
-  m_isVolumetricText: 0
-  m_hasFontAssetChanged: 0
-  m_baseMaterial: {fileID: 0}
-  m_maskOffset: {x: 0, y: 0, z: 0, w: 0}
---- !u!222 &10576699
-CanvasRenderer:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 10576695}
-  m_CullTransparentMesh: 1
 --- !u!1 &92358042
 GameObject:
   m_ObjectHideFlags: 0
@@ -408,7 +258,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   estBloquer: 1
   debloqueAssocier: debloqueAccesZone1
-  gameManager: {fileID: 542553043}
+  gameManager: {fileID: 0}
   zoneAssocier: accesZone2
 --- !u!114 &114608975
 MonoBehaviour:
@@ -567,7 +417,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f881b07fabf54ba4dbfaa81571b916fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameManager: {fileID: 542553043}
+  gameManager: {fileID: 0}
   zoneAssocier: accesEtQuete
   besoinProximiteJoueurPourOuvrir: 1
 --- !u!114 &201278765
@@ -706,7 +556,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcbd49d0c69f6d24686d77d98475a167, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameManager: {fileID: 542553043}
+  gameManager: {fileID: 0}
   zoneAssocier: accesZone2
 --- !u!114 &204473893
 MonoBehaviour:
@@ -873,7 +723,7 @@ PrefabInstance:
     - target: {fileID: 1695750752546383119, guid: ebbb80dd8b09a6c429178c3ce6651af7, type: 3}
       propertyPath: questsManager
       value: 
-      objectReference: {fileID: 1793331585}
+      objectReference: {fileID: 0}
     - target: {fileID: 4506170244079437478, guid: ebbb80dd8b09a6c429178c3ce6651af7, type: 3}
       propertyPath: m_Name
       value: Objet Interactable (1)
@@ -881,11 +731,11 @@ PrefabInstance:
     - target: {fileID: 5351731484601629695, guid: ebbb80dd8b09a6c429178c3ce6651af7, type: 3}
       propertyPath: gameManager
       value: 
-      objectReference: {fileID: 542553043}
+      objectReference: {fileID: 0}
     - target: {fileID: 5351731484601629695, guid: ebbb80dd8b09a6c429178c3ce6651af7, type: 3}
       propertyPath: questManager
       value: 
-      objectReference: {fileID: 1793331585}
+      objectReference: {fileID: 0}
     - target: {fileID: 5351731484601629695, guid: ebbb80dd8b09a6c429178c3ce6651af7, type: 3}
       propertyPath: zoneAssocier
       value: accesTutoPart2
@@ -980,7 +830,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1d6165c71777a504ea27c69f4932af40, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  questsManager: {fileID: 1793331585}
+  questsManager: {fileID: 0}
   queteAssocierNumero: 0
   queteAssocieeNom: 
 --- !u!65 &312172956
@@ -1084,7 +934,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0e5cffc4cdb69174db6d4f7a03e080e2, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  questManager: {fileID: 1793331585}
+  questManager: {fileID: 0}
   delaisTriggerQueteEnSecondes: 0
   queteAssociee: 
 --- !u!1 &312937392
@@ -2279,60 +2129,6 @@ MeshRenderer:
   m_SortingLayer: 0
   m_SortingOrder: 0
   m_AdditionalVertexStreams: {fileID: 0}
---- !u!1 &542553043
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 542553045}
-  - component: {fileID: 542553044}
-  m_Layer: 0
-  m_Name: GameManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &542553044
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 542553043}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0b9bb511201010c44bf8a3d53fc42d90, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  accesTutoPart2: 0
-  accesTutoPart3: 0
-  accesZone1: 0
-  accesZone1Part2: 0
-  accesZone1Part3: 0
-  accesZone2: 0
-  puzzle1Fin: 0
-  accesEtQuete: 0
-  debloqueAccesZone1: 0
-  ascenseur1: 0
---- !u!4 &542553045
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 542553043}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 11.331653, y: -1.2233801, z: -8.604352}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1001 &562771334
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -2344,7 +2140,7 @@ PrefabInstance:
     - target: {fileID: 1695750752546383119, guid: ebbb80dd8b09a6c429178c3ce6651af7, type: 3}
       propertyPath: questsManager
       value: 
-      objectReference: {fileID: 1793331585}
+      objectReference: {fileID: 0}
     - target: {fileID: 1695750752546383119, guid: ebbb80dd8b09a6c429178c3ce6651af7, type: 3}
       propertyPath: queteAssocierNumero
       value: 1
@@ -2356,11 +2152,11 @@ PrefabInstance:
     - target: {fileID: 5351731484601629695, guid: ebbb80dd8b09a6c429178c3ce6651af7, type: 3}
       propertyPath: gameManager
       value: 
-      objectReference: {fileID: 542553043}
+      objectReference: {fileID: 0}
     - target: {fileID: 5351731484601629695, guid: ebbb80dd8b09a6c429178c3ce6651af7, type: 3}
       propertyPath: questManager
       value: 
-      objectReference: {fileID: 1793331585}
+      objectReference: {fileID: 0}
     - target: {fileID: 5351731484601629695, guid: ebbb80dd8b09a6c429178c3ce6651af7, type: 3}
       propertyPath: zoneAssocier
       value: accesEtQuete
@@ -2470,7 +2266,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fcbd49d0c69f6d24686d77d98475a167, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameManager: {fileID: 542553043}
+  gameManager: {fileID: 0}
   zoneAssocier: accesTutoPart3
 --- !u!114 &588907889
 MonoBehaviour:
@@ -3075,7 +2871,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 40d2dd8a82b7dc5429bc976bb4562a4b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameManager: {fileID: 542553043}
+  gameManager: {fileID: 0}
   zoneAssocier: ascenseur1
   hauteurHaut: 10
   hauteurBas: -3
@@ -3617,7 +3413,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f881b07fabf54ba4dbfaa81571b916fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameManager: {fileID: 542553043}
+  gameManager: {fileID: 0}
   zoneAssocier: puzzle1Fin
   besoinProximiteJoueurPourOuvrir: 0
 --- !u!114 &799962968
@@ -3768,7 +3564,7 @@ PrefabInstance:
     - target: {fileID: 1695750752546383119, guid: ebbb80dd8b09a6c429178c3ce6651af7, type: 3}
       propertyPath: questsManager
       value: 
-      objectReference: {fileID: 1793331585}
+      objectReference: {fileID: 0}
     - target: {fileID: 1695750752546383119, guid: ebbb80dd8b09a6c429178c3ce6651af7, type: 3}
       propertyPath: queteAssocierNumero
       value: 1
@@ -3780,11 +3576,11 @@ PrefabInstance:
     - target: {fileID: 5351731484601629695, guid: ebbb80dd8b09a6c429178c3ce6651af7, type: 3}
       propertyPath: gameManager
       value: 
-      objectReference: {fileID: 542553043}
+      objectReference: {fileID: 0}
     - target: {fileID: 5351731484601629695, guid: ebbb80dd8b09a6c429178c3ce6651af7, type: 3}
       propertyPath: questManager
       value: 
-      objectReference: {fileID: 1793331585}
+      objectReference: {fileID: 0}
     - target: {fileID: 5351731484601629695, guid: ebbb80dd8b09a6c429178c3ce6651af7, type: 3}
       propertyPath: zoneAssocier
       value: accesTutoPart2
@@ -3982,7 +3778,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f881b07fabf54ba4dbfaa81571b916fe, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameManager: {fileID: 542553043}
+  gameManager: {fileID: 0}
   zoneAssocier: accesTutoPart2
   besoinProximiteJoueurPourOuvrir: 1
 --- !u!1 &1154928009
@@ -4382,7 +4178,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   estBloquer: 0
   debloqueAssocier: 
-  gameManager: {fileID: 542553043}
+  gameManager: {fileID: 0}
   zoneAssocier: 'accesTutoPar '
 --- !u!1 &1432481863
 GameObject:
@@ -4552,7 +4348,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ed1df57284a863b44aeda86ebe043426, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  gameManager: {fileID: 542553043}
+  gameManager: {fileID: 0}
   bouton1: {fileID: 518405760}
   bouton2: {fileID: 1958244747}
   bouton3: {fileID: 486709949}
@@ -4713,7 +4509,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6d3c861bed747aa4493a0a087326a7d7, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  questsManager: {fileID: 1793331585}
+  questsManager: {fileID: 0}
   passeALaQueteSuivante: 0
   queteActuelle: 
 --- !u!1 &1556045343
@@ -4987,189 +4783,8 @@ Transform:
   - {fileID: 410087041}
   - {fileID: 832575519}
   - {fileID: 654609790}
-  - {fileID: 1751593286}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1751593283
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1751593286}
-  - component: {fileID: 1751593285}
-  - component: {fileID: 1751593284}
-  m_Layer: 0
-  m_Name: EventSystem
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1751593284
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1751593283}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 01614664b831546d2ae94a42149d80ac, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_SendPointerHoverToParent: 1
-  m_MoveRepeatDelay: 0.5
-  m_MoveRepeatRate: 0.1
-  m_XRTrackingOrigin: {fileID: 0}
-  m_ActionsAsset: {fileID: -944628639613478452, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_PointAction: {fileID: -1654692200621890270, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_MoveAction: {fileID: -8784545083839296357, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_SubmitAction: {fileID: 392368643174621059, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_CancelAction: {fileID: 7727032971491509709, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_LeftClickAction: {fileID: 3001919216989983466, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_MiddleClickAction: {fileID: -2185481485913320682, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_RightClickAction: {fileID: -4090225696740746782, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_ScrollWheelAction: {fileID: 6240969308177333660, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_TrackedDevicePositionAction: {fileID: 6564999863303420839, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_TrackedDeviceOrientationAction: {fileID: 7970375526676320489, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
-  m_DeselectOnBackgroundClick: 1
-  m_PointerBehavior: 0
-  m_CursorLockBehavior: 0
---- !u!114 &1751593285
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1751593283}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_FirstSelected: {fileID: 0}
-  m_sendNavigationEvents: 1
-  m_DragThreshold: 10
---- !u!4 &1751593286
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1751593283}
-  serializedVersion: 2
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
-  m_LocalPosition: {x: -28.40978, y: 1.3440261, z: -10.766737}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 1736344421}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!1 &1776325795
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1776325799}
-  - component: {fileID: 1776325798}
-  - component: {fileID: 1776325797}
-  - component: {fileID: 1776325796}
-  m_Layer: 5
-  m_Name: Canvas
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1776325796
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1776325795}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: dc42784cf147c0c48a680349fa168899, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_IgnoreReversedGraphics: 1
-  m_BlockingObjects: 0
-  m_BlockingMask:
-    serializedVersion: 2
-    m_Bits: 4294967295
---- !u!114 &1776325797
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1776325795}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 0cd44c1031e13a943bb63640046fad76, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  m_UiScaleMode: 0
-  m_ReferencePixelsPerUnit: 100
-  m_ScaleFactor: 1
-  m_ReferenceResolution: {x: 800, y: 600}
-  m_ScreenMatchMode: 0
-  m_MatchWidthOrHeight: 0
-  m_PhysicalUnit: 3
-  m_FallbackScreenDPI: 96
-  m_DefaultSpriteDPI: 96
-  m_DynamicPixelsPerUnit: 1
-  m_PresetInfoIsWorld: 0
---- !u!223 &1776325798
-Canvas:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1776325795}
-  m_Enabled: 1
-  serializedVersion: 3
-  m_RenderMode: 0
-  m_Camera: {fileID: 0}
-  m_PlaneDistance: 100
-  m_PixelPerfect: 0
-  m_ReceivesEvents: 1
-  m_OverrideSorting: 0
-  m_OverridePixelPerfect: 0
-  m_SortingBucketNormalizedSize: 0
-  m_VertexColorAlwaysGammaSpace: 0
-  m_AdditionalShaderChannelsFlag: 25
-  m_UpdateRectTransformForStandalone: 0
-  m_SortingLayerID: 0
-  m_SortingOrder: 0
-  m_TargetDisplay: 0
---- !u!224 &1776325799
-RectTransform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1776325795}
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 0, y: 0, z: 0}
-  m_LocalScale: {x: 0, y: 0, z: 0}
-  m_ConstrainProportionsScale: 0
-  m_Children:
-  - {fileID: 10576696}
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0, y: 0}
-  m_AnchorMax: {x: 0, y: 0}
-  m_AnchoredPosition: {x: 0, y: 0}
-  m_SizeDelta: {x: 0, y: 0}
-  m_Pivot: {x: 0, y: 0}
 --- !u!1 &1793311823
 GameObject:
   m_ObjectHideFlags: 0
@@ -5240,7 +4855,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   estBloquer: 0
   debloqueAssocier: 
-  gameManager: {fileID: 542553043}
+  gameManager: {fileID: 0}
   zoneAssocier: ascenseur1
 --- !u!114 &1793311827
 MonoBehaviour:
@@ -5351,58 +4966,6 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1793311823}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
---- !u!1 &1793331585
-GameObject:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  serializedVersion: 6
-  m_Component:
-  - component: {fileID: 1793331587}
-  - component: {fileID: 1793331586}
-  m_Layer: 0
-  m_Name: QuestsManager
-  m_TagString: Untagged
-  m_Icon: {fileID: 0}
-  m_NavMeshLayer: 0
-  m_StaticEditorFlags: 0
-  m_IsActive: 1
---- !u!114 &1793331586
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1793331585}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 21973e310de9c974295f45f7dba8e96f, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
-  listeQuetes:
-  - Quetes 1! WOAW
-  - Quete 2! ATTEINDRE LA RIVIERE
-  - EN RAB
-  - EN RAB 2
-  - EN RAB 3
-  - EN RAB 4
-  - AVOIR 1 QUETE D'EXTRA EN DERNIER (QUI FAIT RIEN)
---- !u!4 &1793331587
-Transform:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 1793331585}
-  serializedVersion: 2
-  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 2.3883004, y: 0.68554324, z: 30.708904}
-  m_LocalScale: {x: 1, y: 1, z: 1}
-  m_ConstrainProportionsScale: 0
-  m_Children: []
-  m_Father: {fileID: 0}
-  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!4 &1893586107 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7110056638870447323, guid: ebbb80dd8b09a6c429178c3ce6651af7, type: 3}
@@ -5765,6 +5328,84 @@ MeshFilter:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1958244747}
   m_Mesh: {fileID: 10207, guid: 0000000000000000e000000000000000, type: 0}
+--- !u!1 &2023533283
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 2023533286}
+  - component: {fileID: 2023533285}
+  - component: {fileID: 2023533284}
+  m_Layer: 0
+  m_Name: EventSystem
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!114 &2023533284
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2023533283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 01614664b831546d2ae94a42149d80ac, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_SendPointerHoverToParent: 1
+  m_MoveRepeatDelay: 0.5
+  m_MoveRepeatRate: 0.1
+  m_XRTrackingOrigin: {fileID: 0}
+  m_ActionsAsset: {fileID: -944628639613478452, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_PointAction: {fileID: -1654692200621890270, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_MoveAction: {fileID: -8784545083839296357, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_SubmitAction: {fileID: 392368643174621059, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_CancelAction: {fileID: 7727032971491509709, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_LeftClickAction: {fileID: 3001919216989983466, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_MiddleClickAction: {fileID: -2185481485913320682, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_RightClickAction: {fileID: -4090225696740746782, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_ScrollWheelAction: {fileID: 6240969308177333660, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_TrackedDevicePositionAction: {fileID: 6564999863303420839, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_TrackedDeviceOrientationAction: {fileID: 7970375526676320489, guid: ca9f5fa95ffab41fb9a615ab714db018, type: 3}
+  m_DeselectOnBackgroundClick: 1
+  m_PointerBehavior: 0
+  m_CursorLockBehavior: 0
+--- !u!114 &2023533285
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2023533283}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 76c392e42b5098c458856cdf6ecaaaa1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_FirstSelected: {fileID: 0}
+  m_sendNavigationEvents: 1
+  m_DragThreshold: 10
+--- !u!4 &2023533286
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2023533283}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 489.4502, y: 565.5116, z: 128.23494}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
 --- !u!1 &2091242779
 GameObject:
   m_ObjectHideFlags: 0
@@ -5811,7 +5452,7 @@ PrefabInstance:
     - target: {fileID: 1695750752546383119, guid: ebbb80dd8b09a6c429178c3ce6651af7, type: 3}
       propertyPath: questsManager
       value: 
-      objectReference: {fileID: 1793331585}
+      objectReference: {fileID: 0}
     - target: {fileID: 1695750752546383119, guid: ebbb80dd8b09a6c429178c3ce6651af7, type: 3}
       propertyPath: queteAssocierNumero
       value: 2
@@ -5823,11 +5464,11 @@ PrefabInstance:
     - target: {fileID: 5351731484601629695, guid: ebbb80dd8b09a6c429178c3ce6651af7, type: 3}
       propertyPath: gameManager
       value: 
-      objectReference: {fileID: 542553043}
+      objectReference: {fileID: 0}
     - target: {fileID: 5351731484601629695, guid: ebbb80dd8b09a6c429178c3ce6651af7, type: 3}
       propertyPath: questManager
       value: 
-      objectReference: {fileID: 1793331585}
+      objectReference: {fileID: 0}
     - target: {fileID: 5351731484601629695, guid: ebbb80dd8b09a6c429178c3ce6651af7, type: 3}
       propertyPath: estAssocierAUneQuete
       value: 1
@@ -5889,7 +5530,5 @@ SceneRoots:
   - {fileID: 312937393}
   - {fileID: 1555595465}
   - {fileID: 94408003}
-  - {fileID: 542553045}
-  - {fileID: 1793331587}
   - {fileID: 485083619}
-  - {fileID: 1776325799}
+  - {fileID: 2023533286}

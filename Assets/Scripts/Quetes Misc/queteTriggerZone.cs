@@ -7,7 +7,10 @@ public class queteTriggerZone : MonoBehaviour
 
     [SerializeField] private string queteAssociee;
 
-
+    private void Start()
+    {
+        questManager = GameObject.Find("questsManager");
+    }
 
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Update()

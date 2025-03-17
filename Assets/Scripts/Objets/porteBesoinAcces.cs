@@ -24,6 +24,8 @@ public class porteBesoinAcces : MonoBehaviour
     private void Start()
     {
 
+        gameManager = GameObject.Find("gameManager");
+
         gererAccesZones = gameManager.GetComponent<gererAccesZones>();
 
         type = gererAccesZones.GetType();

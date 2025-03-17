@@ -33,6 +33,8 @@ public class puzzle1Manager : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+
+        gameManager = GameObject.Find("gameManager");
         statusPuzzle = true;
         stack = 0;
 

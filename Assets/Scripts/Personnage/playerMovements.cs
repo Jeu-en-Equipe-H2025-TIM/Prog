@@ -8,6 +8,7 @@ using Unity.VisualScripting;
 public class playerMovements : MonoBehaviour
 {
     CharacterController characterController;
+    public GameObject gameManager;
 
     // Variables Deplacement
     Vector3 deplacement;
@@ -42,6 +43,12 @@ public class playerMovements : MonoBehaviour
     {
         Cursor.lockState = CursorLockMode.Locked;
         characterController = GetComponent<CharacterController>();
+
+        gameManager = GameObject.Find("gameManager");
+        characterController.enabled = false;
+        Invoke("placeJoueur", 0.5f);
+
+
     }
 
     // Update is called once per frame
@@ -127,6 +134,12 @@ public class playerMovements : MonoBehaviour
         // Trigger
     }
 
+    public void placeJoueur()
+    {
+        Debug.Log("Set ma position: " + gameManager.GetComponent<gameManager>().positionJoueurPublique);
+        this.transform.position = gameManager.GetComponent<gameManager>().positionJoueurPublique;
+        characterController.enabled = true;
+    }
 }
 
 
