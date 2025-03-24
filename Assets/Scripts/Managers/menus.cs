@@ -73,7 +73,7 @@ public class menus : MonoBehaviour
         Debug.Log("Bouton UI: Commencer le jeu");
         // Animation du livre du ferme 
         // ICI
-        livreMenu.GetComponent<Animator>().setTrigger("Commencer");
+        livreMenu.GetComponent<Animator>().SetTrigger("Commencer");
 
 
         // GetComponent<AudioSource>().PlayOneShot(sonUI);
@@ -113,7 +113,7 @@ public class menus : MonoBehaviour
 
         // Animation du livre du ferme 
         // ICI
-        livreMenu.GetComponent<Animator>().setTrigger("Credit");
+        livreMenu.GetComponent<Animator>().SetTrigger("Credit");
 
         // ACTION - Fera 1s de fondu au noir et ensuite change la scene automatiquement
         StartCoroutine(fonduChangerSceneDefondu("Credits"));
@@ -130,7 +130,7 @@ public class menus : MonoBehaviour
         {
             // Animation du livre du ferme 
             // 
-            livreMenu.GetComponent<Animator>().setTrigger("Reglages");
+            livreMenu.GetComponent<Animator>().SetTrigger("Reglages");
 
             // ACTION - Fera 1s de fondu au noir et ensuite change la scene automatiquement
             StartCoroutine(fonduChangerSceneDefondu("Reglages"));
@@ -152,7 +152,7 @@ public class menus : MonoBehaviour
 
         // Animation du livre du ferme 
         // ICI
-        livreMenu.GetComponent<Animator>().setTrigger("Quitter");
+        livreMenu.GetComponent<Animator>().SetTrigger("Quitter");
 
         Application.Quit();
 
