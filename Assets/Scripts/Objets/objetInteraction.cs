@@ -2,7 +2,7 @@ using System.Reflection;
 using UnityEngine;
 using System;
 
-public class carteaccesInteraction : MonoBehaviour
+public class objetInteraction : MonoBehaviour
 {
     private bool proximiteJoueur;
     private bool doSomething;

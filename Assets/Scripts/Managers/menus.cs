@@ -23,6 +23,8 @@ public class menus : MonoBehaviour
     public GameObject canvasPause;
     public GameObject canvasFin;
 
+    public GameObject livreMenu;
+
 
     // Variables generales au script
     private Boolean fin = false; // Empecher de spammer / faire une partie du script en boucle
@@ -39,6 +41,11 @@ public class menus : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
+        if (SceneManager.GetActiveScene().name == "MenuPrincipal")
+        {
+            livreMenu = GameObject.Find("BinderComplet");
+        }
+
         // Ouverture du menu pause 
         if (Application.isPlaying)
         {
@@ -66,6 +73,8 @@ public class menus : MonoBehaviour
         Debug.Log("Bouton UI: Commencer le jeu");
         // Animation du livre du ferme 
         // ICI
+        livreMenu.GetComponent<Animator>().setTrigger("Commencer");
+
 
         // GetComponent<AudioSource>().PlayOneShot(sonUI);
 
@@ -82,7 +91,7 @@ public class menus : MonoBehaviour
 
         // GetComponent<AudioSource>().PlayOneShot(sonUI);
 
-        // ACTION - Fera 1s de fondu au noir et ensuite change la scene automatiquement
+        // ACTION - Va faire 1s de fondu au noir et ensuite change la scene automatiquement
         if (SceneManager.GetActiveScene().name == "Jeu")
         {
             Debug.Log("Accueil version en jeu");
@@ -104,6 +113,7 @@ public class menus : MonoBehaviour
 
         // Animation du livre du ferme 
         // ICI
+        livreMenu.GetComponent<Animator>().setTrigger("Credit");
 
         // ACTION - Fera 1s de fondu au noir et ensuite change la scene automatiquement
         StartCoroutine(fonduChangerSceneDefondu("Credits"));
@@ -119,7 +129,8 @@ public class menus : MonoBehaviour
         if (SceneManager.GetActiveScene().name == "MenuPrincipal")
         {
             // Animation du livre du ferme 
-            // ICI
+            // 
+            livreMenu.GetComponent<Animator>().setTrigger("Reglages");
 
             // ACTION - Fera 1s de fondu au noir et ensuite change la scene automatiquement
             StartCoroutine(fonduChangerSceneDefondu("Reglages"));
@@ -141,6 +152,8 @@ public class menus : MonoBehaviour
 
         // Animation du livre du ferme 
         // ICI
+        livreMenu.GetComponent<Animator>().setTrigger("Quitter");
+
         Application.Quit();
 
     }
@@ -252,7 +265,7 @@ public class menus : MonoBehaviour
             yield return null; // Aka attend la prochaine frame et non un temps X 
         }
 
-        // Invisibiliter a 100% a la fin peut importe quoi
+        // Invisibiliter a 100% a la fin peu importe quoi
         couleur.a = 1;
         imageNoire.color = couleur;
     }
@@ -274,7 +287,7 @@ public class menus : MonoBehaviour
             yield return null; // Aka attend la prochaine frame et non un temps X 
         }
 
-        // Invisibiliter a 0% a la fin peut importe quoi
+        // Invisibiliter a 0% a la fin peu importe quoi
         couleur.a = 0;
         imageNoire.color = couleur;
         ecranNoir.gameObject.SetActive(false);

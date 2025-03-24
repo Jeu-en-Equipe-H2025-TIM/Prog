@@ -4393,6 +4393,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 42c6894f6f6b7ee42883db3d3fa9b87a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameManager: {fileID: 0}
   vitesseDeplacementBase: 4
   multiplicateurMarche: 1
   multiplicateurCourse: 2
@@ -5475,7 +5476,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5351731484601629695, guid: ebbb80dd8b09a6c429178c3ce6651af7, type: 3}
       propertyPath: delaisTriggerQueteEnSecondes
-      value: 2
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 7110056638870447323, guid: ebbb80dd8b09a6c429178c3ce6651af7, type: 3}
       propertyPath: m_LocalPosition.x

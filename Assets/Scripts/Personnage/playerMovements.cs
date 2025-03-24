@@ -47,8 +47,6 @@ public class playerMovements : MonoBehaviour
         gameManager = GameObject.Find("gameManager");
         characterController.enabled = false;
         Invoke("placeJoueur", 0.5f);
-
-
     }
 
     // Update is called once per frame

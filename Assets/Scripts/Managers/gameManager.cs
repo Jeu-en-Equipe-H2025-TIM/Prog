@@ -24,6 +24,9 @@ public class gameManager : MonoBehaviour
     // Start is called once before the first execution of Update after the MonoBehaviour is created
     void Start()
     {
+        joueur = GameObject.Find("Player");
+
+        Invoke("sauvegardePositionJoueur", 0.0f);
         // Pour utiliser les variables statiques
         if (instance == null)
         {
@@ -44,7 +47,6 @@ public class gameManager : MonoBehaviour
 
     void Update()
     {
-
         positionJoueurPublique = positionSauvegarderJoueur;
 
         if (!timerIsRunning && SceneManager.GetActiveScene().name == "Jeu")
