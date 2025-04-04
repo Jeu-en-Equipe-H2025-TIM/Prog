@@ -3968,6 +3968,7 @@ GameObject:
   - component: {fileID: 1165554331}
   - component: {fileID: 1165554333}
   - component: {fileID: 1165554332}
+  - component: {fileID: 1165554334}
   m_Layer: 0
   m_Name: Flashlight (spot light)
   m_TagString: Untagged
@@ -4078,6 +4079,18 @@ Light:
   m_LightUnit: 1
   m_LuxAtDistance: 1
   m_EnableSpotReflector: 1
+--- !u!114 &1165554334
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1165554330}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fad70701cf388674785c50ea029657fe, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!4 &1166033177 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 7110056638870447323, guid: ebbb80dd8b09a6c429178c3ce6651af7, type: 3}
