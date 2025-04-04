@@ -73,7 +73,7 @@ public class menus : MonoBehaviour
         Debug.Log("Bouton UI: Commencer le jeu");
         // Animation du livre du ferme 
         // ICI
-        livreMenu.GetComponent<Animator>().SetTrigger("Commencer");
+        //livreMenu.GetComponent<Animator>().SetTrigger("Commencer");
 
 
         // GetComponent<AudioSource>().PlayOneShot(sonUI);
